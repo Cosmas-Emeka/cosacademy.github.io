@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+:root {
+    --logo-color: gold;
+    --nav-color: rgb(240, 238, 238);
+    --links: rgb(232, 198, 2);
+    --links-hover: rgb(145, 126, 15);
+    --bg-color: rgb(16, 51, 18);
+    --fg-color: rgb(26, 105, 58);
+}
+
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* Navigation setup */
+nav {
+    position: fixed;
+    background: var(--nav-color);
+    height: 3.3rem;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 0px 5px 5px rgb(48, 15, 15);
+}
+
+/* Logo Design */
+.logo-wrapper {
+    width: 80px;
+    height: 40px;
+    margin-left: 1rem;
+    background: #000;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+
+
+.logo-wrapper .first, .second {
+    position: absolute;
+    top: 6px;
+    left: 53px;
+    width: 10px;
+    height: 20px;
+    background: var(--nav-color);
+    border-radius: 50%;
+}
+
+.second {
+    top: 30px;
+}
+
+
+.menu-icon {
+    font-weight: 700;
+    border-radius: 5px;
+    background: var(--links);
+    color: #000;
+    padding: 6px;
+    display: none;
+    border: 1px solid #000;
+}
+
+.menu-icon:hover {
+    background: var(--links-hover);
+    color: #fff;
+}
+/* End of Logo Design */
+
+
+.links {
+    float: right;
+    margin-right: 1.3rem;
+    margin-top: -2rem;
+}
+
+
+.links a {
+    display: inline-block;
+    margin: -2rem 1rem;
+    font-size: 1rem;
+    padding: 5px 10px;
+    color: #000;
+    border-radius: 3px;
+    font-weight: bold;
+    background: var(--links);
+    border: 1px solid #000;
+}
+
+
+.links a:active, a:hover {
+    background: var(--links-hover);
+    transition: 0.7s;
+    color: #fff;
+}
+
+
+.check-btn {
+    color: #fff;
+    float: right;
+    margin-right: 2.5rem;
+    cursor: pointer;
+}
+
+
+#check {
+    display: none;
+}
+/* End of navigation setup */
+
+
+.container {
+    position: relative;
+    top: 3.4rem;
+    height: 100vh;
+    box-shadow: 0px 0px 5px 5px rgb(5, 5, 17);
+}
+
+.intro {
+    height: 20rem;
+    border-radius: 0 0 10% 10%;
+    background: var(--links);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+}
+
+
+.intro input {
+    margin-top: 3rem;
+    width: 60%;
+    max-width: 20rem;
+    height: 2rem;
+}
+
+
+#chatbot {
+    position: fixed;
+    top: 82vh;
+    right: -5%;
+    width: 60px;
+    height: 60px;
+    background: #000;
+    margin: 5rem;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 490px) {
+    .logo-wrapper {
+        margin-top: 0.4rem;
+        width: 70px;
+        height: 35px;
+    }
+}
+
+.logo-img {
+    width: 30px;
+    height: 30px;
+    margin-left: 6px;
+    margin-top: 4px;
+}
+
+
+@media (max-width: 490px) {
+    .logo-img {
+        width: 25px;
+        height: 25px;
+    }
+    .logo-wrapper .first, .second {
+        width: 8px;
+        height: 18px;
+        top: 2px;
+        left: 45px;
+    }
+    .second {
+        top: 25px;
+    }
+}
+
+
+@media (max-width: 960px) {
+    .check-btn {
+        display: block;
+    }
+    .links {
+        position: fixed;
+        height: 100vh;
+        background: rgb(172, 150, 26);
+        top: 80px;
+        left: -100%;
+        opacity: 95%;
+        width: 90px;
+        text-align: center;
+        transition: all .5s;
+        overflow: scroll;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+    .links::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+    .links a {
+        display: flex;
+        justify-content: center;
+        margin: 3rem 0;
+        font-size: 0.8rem;
+        color: #000;
+        border: none;
+        background: none;
+    }
+    .links a:hover, .link a:active {
+        background: none;
+        color: #fff;
+    }
+    #check:checked ~ .links {
+        top: 5.7rem;
+        left: 0.1%;
+    }
+    .menu-icon {
+        display: block;
+        margin-top: 0.5rem;
+    }
+    .menu-icon::content {
+        transform: rotate(90deg);
+    }
+}
