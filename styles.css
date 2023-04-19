@@ -1,341 +1,147 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
     text-decoration: none;
+    overflow-x: hidden;
 }
 
 
-:root {
-    --logo-color: gold;
-    --nav-color: rgb(240, 238, 238);
-    --links: rgb(232, 198, 2);
-    --links-hover: rgb(145, 126, 15);
-    --bg-color: rgb(16, 51, 18);
-    --fg-color: rgb(26, 105, 58);
-}
-
-
-body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-
-/* Navigation setup */
-nav {
-    position: fixed;
-    background: var(--nav-color);
-    height: 3.3rem;
+.header {
+    min-height: 100vh;
     width: 100%;
-    z-index: 10;
-    box-shadow: 0px 0px 5px 5px rgb(48, 15, 15);
-}
-
-/* Logo Design */
-.logo-wrapper {
-    width: 80px;
-    height: 40px;
-    margin-left: 1rem;
-    background: #000;
-    margin-top: 0.5rem;
-    border-radius: 5px;
-}
-
-
-.logo-wrapper .first, .second {
-    position: absolute;
-    top: 6px;
-    left: 53px;
-    width: 10px;
-    height: 20px;
-    background: var(--nav-color);
-    border-radius: 50%;
-}
-
-.second {
-    top: 30px;
-}
-
-
-.menu-icon {
-    font-weight: 700;
-    border-radius: 5px;
-    background: var(--links);
-    color: #000;
-    padding: 6px;
-    display: none;
-    border: 1px solid #000;
-}
-
-.menu-icon:hover {
-    background: var(--links-hover);
-    color: #fff;
-}
-/* End of Logo Design */
-
-
-.links {
-    float: right;
-    margin-right: 1.3rem;
-    margin-top: -2rem;
-}
-
-
-.links a {
-    display: inline-block;
-    margin: -2rem 1rem;
-    font-size: 1rem;
-    padding: 5px 10px;
-    color: #000;
-    border-radius: 3px;
-    font-weight: bold;
-    background: var(--links);
-    border: 1px solid #000;
-}
-
-
-.links a:active, a:hover {
-    background: var(--links-hover);
-    transition: 0.7s;
-    color: #fff;
-}
-
-
-.check-btn {
-    color: #fff;
-    float: right;
-    margin-right: 2.5rem;
-    cursor: pointer;
-}
-
-
-#check {
-    display: none;
-}
-/* End of navigation setup */
-
-
-.container {
+    background-image: linear-gradient(rgba(239, 223, 43, 0.7), rgba(239, 223, 43, 0.7)),url(./imgs/study.webp);
+    background-position: center;
+    background-size: cover;
     position: relative;
-    top: 3.4rem;
-    height: 100vh;
-    box-shadow: 0px 0px 5px 5px rgb(5, 5, 17);
 }
 
 
-.intro {
-    height: 20rem;
-    border-radius: 0 0 10% 10%;
-    background: var(--links);
+nav {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    text-align: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-
-.intro div {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 2% 6%;
+    justify-content: space-between;
     align-items: center;
 }
 
 
-.intro img {
-    width: 300px;
-    height: 300px;
+.logo {
+    width: 100px;
+    height: 100px;
 }
 
 
-@media (max-width: 720px) {
-    .intro img {
-        display: none;
-    }
+.nav-links {
+    flex: 1;
+    text-align: right;
 }
 
 
-.intro input {
-    margin-top: 3rem;
-    width: 60%;
-    max-width: 20rem;
-    height: 2.5rem;
-    border-radius: 10px;
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+.nav-links ul li a {
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.nav-links ul li::after, .nav-links ul li::before {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(97, 97, 211);
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+}
+
+
+.nav-links ul li:hover::after, .nav-links ul li:hover::before {
+    width: 100%;
+}
+
+
+.text-box {
+    width: 90%;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+
+.text-box p {
+    margin: 10px 0 40px;
     font-size: 1rem;
 }
 
 
-
-
-#chatbot {
-    position: fixed;
-    top: 82vh;
-    right: -5%;
-    width: 60px;
-    height: 60px;
-    background: #000;
-    margin: 5rem;
-    padding: 3px;
-    border-radius: 50%;
+.hero-btn {
+    display: inline-block;
+    border: 1px solid ;
+    color: #000;
+    border-radius: 10px;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    font-weight: bolder;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Media Queries */
-@media (max-width: 490px) {
-    .logo-wrapper {
-        margin-top: 0.4rem;
-        width: 70px;
-        height: 35px;
-    }
-}
-
-.logo-img {
-    width: 30px;
-    height: 30px;
-    margin-left: 6px;
-    margin-top: 4px;
+.hero-btn:hover {
+    border: 1px solid rgb(97, 97, 211);
+    background: rgb(97, 97, 211);
+    transition: 1s;
+    color: #fff;
 }
 
 
-@media (max-width: 490px) {
-    .logo-img {
-        width: 25px;
-        height: 25px;
-    }
-    .logo-wrapper .first, .second {
-        width: 8px;
-        height: 18px;
-        top: 2px;
-        left: 45px;
-    }
-    .second {
-        top: 25px;
-    }
+nav .fa {
+    display: none;
 }
 
 
-@media (max-width: 960px) {
-    .check-btn {
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-links ul li {
         display: block;
     }
-    .links {
-        position: fixed;
-        height: 100vh;
-        background: rgb(172, 150, 26);
-        top: 80px;
-        left: -100%;
-        opacity: 95%;
-        width: 90px;
+    .nav-links {
+        position: absolute;
+        background: #fff;
+        height: 20rem;
+        border-radius: 1rem;
+        width: 200px;
+        top: 10rem;
+        right: 30%;
         text-align: center;
-        transition: all .5s;
-        overflow: scroll;
-        -ms-overflow-style: none;  /* Internet Explorer 10+ */
-        scrollbar-width: none;  /* Firefox */
+        z-index: 2;
+        transition: 1s;
     }
-    .links::-webkit-scrollbar { 
-        display: none;  /* Safari and Chrome */
-    }
-    .links a {
-        display: flex;
-        justify-content: center;
-        margin: 3rem 0;
-        font-size: 0.8rem;
-        color: #000;
-        border: none;
-        background: none;
-    }
-    .links a:hover, .link a:active {
-        background: none;
-        color: #fff;
-    }
-    #check:checked ~ .links {
-        top: 5.7rem;
-        left: 0.1%;
-    }
-    .menu-icon {
+    nav .fa {
         display: block;
-        margin-top: 0.5rem;
+        margin: 10px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
     }
-    .menu-icon::content {
-        transform: rotate(90deg);
+    .nav-links ul {
+        padding: 30px;
     }
 }
-/* End of media queries */

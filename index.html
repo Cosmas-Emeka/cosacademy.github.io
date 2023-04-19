@@ -1,54 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cosacademy</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="imgs/CA.png">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosacademy</title>
+    <link rel="stylesheet" href="./styles.css">
+  
+</head>
+<body>
+    <section class="header">
         <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="check-btn">
-                <div class="menu-icon">Menu</div>
-            </label>
-                <div class="logo-wrapper">
-                    <img class="logo-img" src="imgs/c.png" alt="">
-                    <img class="logo-img" src="imgs/a.png" alt="">
-                    <div class="first"></div>
-                    <div class="second"></div>
-                </div>
-            <div class="links">
-                <a href="#">GET STARTED</a>
-                <a href="#">COURSES</a>
-                <a href="#">CONTACT</a>
-                <a href="#">FEEDBACKS</a>
-                <a href="#">FAQs</a>
+            <a href="index.html">
+                <img class="logo" src="./imgs/CA.png" alt="">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <img class="fa fa-times" onclick="hideMenu()" src="./imgs/close.png" alt="">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
             </div>
+            <img class="fa fa-menu" id="menuIcon" onclick="showMenu()" src="./imgs/menu.png" alt="">
         </nav>
-        <div class="container">
-            <section class="intro">
-                <div class="first">
-                    <h1>LOREM IPSUM</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur maiores 
-                        vitae corporis officiis, enim. Amet consectetur
-                        maiores vitae corporis officiis, enim.
-                    </p>
-                    <input type="search" name="" id="">
-                </div>
-                <img src="./imgs/system.png" alt="">
-            </section>
-            <section class="courses">
-                <div>
-                    <select name="" id="">Filter</select>
-                </div>
-            </section>
-        </div>
-        <div class="bot">
-            <a><img id="chatbot" src="./imgs/bot.png" alt="Chatbot"/></a>
-        </div>
-    </body>
+
+    <div class="text-box">
+        <h1>LOREM IPUSUM</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti possimus ducimus porro dolorem, cumque et dolores suscipit vero itaque neque minima consectetur ipsam, velit sunt non impedit molestias quas omnis.</p>
+        <a href="" class="hero-btn">
+            Visit Us To Know More
+        </a>
+    </div>
+    </section>
+
+
+
+    <script src="app.js"></script>
+</body>
 </html>
