@@ -7,6 +7,12 @@
 }
 
 
+:root {
+    --pry-color: linear-gradient(rgba(14, 9, 30, 0.7), rgba(14, 9, 30, 0.7));
+    --sec-color: silver;
+}
+
+
 .header {
     min-height: 100vh;
     width: 100%;
@@ -14,6 +20,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    background: "";
 }
 
 
@@ -56,7 +63,7 @@ nav {
     content: "";
     width: 0%;
     height: 2px;
-    background: rgb(97, 97, 211);
+    background: var(--sec-color);
     display: block;
     margin: auto;
     transition: 0.4s;
@@ -103,8 +110,8 @@ nav {
 
 
 .hero-btn:hover {
-    border: 1px solid rgb(97, 97, 211);
-    background: rgb(97, 97, 211);
+    border: 1px solid var(--sec-color);
+    background: var(--sec-color);
     transition: 1s;
     color: #fff;
 }
@@ -124,12 +131,13 @@ nav .fa {
     }
     .nav-links {
         position: absolute;
-        background: #fff;
+        background: var(--sec-color);
         height: 20rem;
-        border-radius: 1rem;
         width: 200px;
+        border-radius: 1rem;
+        opacity: 90%;
         top: 10rem;
-        right: 30%;
+        right: -200px;
         text-align: center;
         z-index: 2;
         transition: 1s;
