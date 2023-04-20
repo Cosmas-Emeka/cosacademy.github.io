@@ -4,11 +4,11 @@ var head = document.getElementById("head");
 
 
 function showMenu() {
-    navLinks.style.right = "30vw";
+    navLinks.style.right = "0";
 }
 
 function hideMenu() {
-    navLinks.style.right = "-50vw";
+    navLinks.style.right = "-300px";
 }
 
 function changeColor() {
