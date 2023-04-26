@@ -9,7 +9,7 @@
 
 :root {
     --pry-color: linear-gradient(rgba(239, 223, 43, 0.7), rgba(239, 223, 43, 0.7));
-    --sec-color: rgb(15, 15, 170);
+    --sec-color: rgb(18, 18, 119);
 }
 
 
@@ -35,8 +35,8 @@ nav {
 
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
 }
 
 
@@ -131,6 +131,9 @@ nav .fa {
     .nav-links ul li {
         display: block;
     }
+    .nav-links ul li a {
+        color: #fff;
+    }
     .nav-links {
         position: absolute;
         background: var(--sec-color);
@@ -142,9 +145,6 @@ nav .fa {
         text-align: center;
         z-index: 2;
         transition: 0.6s;
-    }
-    .nav-links ul li a:hover {
-        border-left: 2px solid var(--sec-color);
     }
     nav .fa {
         display: block;
@@ -210,7 +210,7 @@ h3 {
 
 
 .course-col:hover {
-    box-shadow: 0 0 5px 3px rgb(0,0,0,0.2);
+    box-shadow: 0 0 7px 10px rgb(0,0,0,0.2);
 }
 
 
@@ -241,7 +241,8 @@ h3 {
 
 
 .campus-col img {
-    width: 100%;
+    width: 345px;
+    height: 300px;
 }
 
 
@@ -257,7 +258,16 @@ h3 {
 
 
 .layer:hover {
-    background: rgba(226,0,0,0.7);
+    background: rgba(18,18,119,0.7);
 }
 
 
+.layer h3 {
+    width: 100%;
+    max-height: 100px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    position: absolute;
+}
