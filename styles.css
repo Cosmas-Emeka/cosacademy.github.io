@@ -8,10 +8,12 @@
 
 
 :root {
-    --pry-color: linear-gradient(rgba(14, 9, 30, 0.7), rgba(14, 9, 30, 0.7));
-    --sec-color: silver;
+    --pry-color: linear-gradient(rgba(239, 223, 43, 0.7), rgba(239, 223, 43, 0.7));
+    --sec-color: rgb(15, 15, 170);
 }
 
+
+/* ------------ Header -------------- */
 
 .header {
     min-height: 100vh;
@@ -112,6 +114,7 @@ nav {
 .hero-btn:hover {
     border: 1px solid var(--sec-color);
     background: var(--sec-color);
+    color: #fff;
     transition: 1s;
 }
 
@@ -156,7 +159,6 @@ nav .fa {
 }
 
 
-
 /* ----------------- Course -------------- */
 
 .course {
@@ -166,14 +168,96 @@ nav .fa {
     padding-top: 100px;
 } 
 
+
 h1 {
     font-size: 3rem;
     font-weight: 600;
 }
 
+
 p {
+    color: #777;
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.5rem;
     padding: 0.8rem;
 }
+
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.course-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+.course-col:hover {
+    box-shadow: 0 0 5px 3px rgb(0,0,0,0.2);
+}
+
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+/* ------------ Campus -------------- */
+
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.campus-col img {
+    width: 100%;
+}
+
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+
+.layer:hover {
+    background: rgba(226,0,0,0.7);
+}
+
+
