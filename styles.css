@@ -271,3 +271,11 @@ h3 {
     bottom: 0;
     position: absolute;
 }
+
+
+
+@media (max-width: 481px) {
+    * {
+        font-size: small;
+    }
+}
