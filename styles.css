@@ -283,6 +283,72 @@ h3 {
 }
 
 
+/* --------------- Facilities ---------------- */
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+
+
+.facilities-col img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+.facilities-col p {
+    padding: 0;
+}
+
+
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 481px) {
     p,h1,h2,h3,h4,h5,a {
         font-size: small;
