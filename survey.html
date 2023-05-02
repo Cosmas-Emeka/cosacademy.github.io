@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../fcc_css/survey.css"></link>
+    <link rel="icon" href="../imgs/icons/hphone.png"></link>
+    <title>survey-Form.Cosacademy.com</title>
+  </head>
+  <body>
+    <header>
+      <div class="text-center">
+        <h1 id="title"><img id="logo" src="../imgs/icons/hphone.png"><span class="text-primary">CoSounds</span> Survey Form</h1>
+        <p id="description"><h3>Kindly improve <span id="only">CoSounds</span> by paticipating in this survey</h3></p>
+      </div>
+    </header>
+    <main>
+      <form id="survey-form" method="post">
+        <div class="input-group fs">
+          <label id="name-label">Name</label>
+          <input id="name" type="text" placeholder="e.g Cosmas Emeka" required="" />
+        </div>
+        <div class="input-group">
+          <label id="email-label">Email</label>
+          <input id="email" type="email" placeholder="e.g cosemeka@gmail.com" required="" />
+        </div>
+        <div class="input-group">
+          <label id="number-label">Age</label>
+          <input id="number" type="number" min="5" max="100" placeholder="Insert your age" required=""/>
+        </div>
+        <div class="form-select">
+          <h4>Your contemporary position on <span>CoSounds</span> can be defined as?</h4>
+          <select id="dropdown" required="">
+            <option disabled="" selected="">Select an option</option>
+            <option>Student</option>
+            <option>Artiste</option>
+            <option>Lyricist</option>
+            <option>Others</option>
+            <option>Prefer not to say</option>
+          </select>
+        </div>
+        <div class="radio-group">
+          <h4 class="only">Are we worth advocating for?</h4>
+          <label><input type="radio" value="Certainly" name="radio-option" checked="" />Certainly</label>
+          <label><input type="radio" value="Probably" name="radio-option" />Probably</label>
+          <label><input type="radio" value="Absolutely Not" name="radio-option" />Absolutely Not</label>
+        </div>
+        <div class="form-select">
+          <h4>How long have you been using <span>CoSounds</span>?</h4>
+          <select id="select" required="">
+            <option disabled="" selected="">Select an option</option>
+            <option>Less than a month</option>
+            <option>1 month - 6 months</option>
+            <option>6 months - 1 year</option>
+            <option>Over a year</option>
+          </select>
+        </div>
+        <div class="checkbox-group">
+          <h4 class="only">What would you like to see improved?</h4>
+          <label><input type="checkbox" value="Discovery(Browsing)" />Discovery(Browsing)</label>
+          <label><input type="checkbox" value="Navigation" />Navigation</label>
+          <label><input type="checkbox" value="Music Categorization" />Music Categorization</label>
+          <label><input type="checkbox" value="Music Collections" />Music Collections</label>
+          <label><input type="checkbox" value="Social Media Integration" />Social Media Integration</label>
+          <label><input type="checkbox" value="Recommendations" />Recommendations</label>
+          <label><input type="checkbox" value="Audio Quality" />Audio Quality</label>
+        </div>
+        <div class="textarea-group">
+          <h4 class="only">You can inculde additional suggestion in the box below</h4>
+          <textarea rows="5" cols="30"></textarea>
+        </div>
+        <div>
+          <input type="submit" class="submit-btn" id="submit" name="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+    <div class="black-hat"></div>
+  </body>
+</html>

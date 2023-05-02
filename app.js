@@ -1,6 +1,6 @@
 var navLinks = document.getElementById("navLinks");
 var menuIcon = document.getElementsById("menuIcon");
-var head = document.getElementById("head");
+var search = document.getElementById("search");
 
 
 function showMenu() {
@@ -11,6 +11,6 @@ function hideMenu() {
     navLinks.style.left = "-100%";
 }
 
-function changeColor() {
-    head.style.background = "rgba(14, 9, 30, 0.7)"
+function showSearchBar() {
+    search.style.display = "none";
 }
