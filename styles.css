@@ -269,7 +269,7 @@ h3 {
 
 
 .course-col:hover {
-    box-shadow: 0 0 7px 10px rgb(0,0,0,0.2);
+    box-shadow: 0 0 5px 5px rgba(189, 177, 41, 0.7);
 }
 
 
