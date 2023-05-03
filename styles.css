@@ -42,6 +42,7 @@ nav {
 .logo-link {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 
@@ -186,20 +187,21 @@ nav .fa {
         display: flex;
         align-items: center;
         color: #000;
-        padding: 1rem 1rem;
+        padding: 5px 5px;
         background: var(--pry-color);
         width: 180px;
         border: 2px solid #000;
-        border-radius: 10px;
+        margin-top: -9px;
     }
     .nav-links ul li img {
         display: block;
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         margin-left: 3rem;
     }
     .nav-links ul li h5 {
         margin-left: 1rem;
+        font-size: 10px;
     }
     .nav-links {
         position: fixed;
@@ -407,17 +409,32 @@ h3 {
 
 
 .testimonial-col {
+    display: flex;
     flex-basis: 44%;
+    text-align: left;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px rgb(182, 180, 180);
+    cursor: pointer;
 }
 
 
-.testimonial-col img {
+.testimonial-img {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
+}
+
+
+.testimonial-col h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+
+.testimonial-col div img {
+    width: 20px;
+    height: 20px;
 }
 
 
