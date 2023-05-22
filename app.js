@@ -1,4 +1,4 @@
-var navLinks = document.getElementById("navLinks");
+/*var navLinks = document.getElementById("navLinks");
 var menuIcon = document.getElementsById("menuIcon");
 var search = document.getElementById("search");
 
