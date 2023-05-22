@@ -1,14 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
+    scrollbar-width: none;
 }
 
 
 :root {
     --pry-color: rgb(239, 223, 43);
-    --sec-color: rgb(18, 18, 119);
+    --sec-color: rgb(35, 35, 155);
 }
 
 
@@ -17,7 +18,7 @@
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(239, 223, 43, 0.7), rgba(239, 223, 43, 0.7)),url(./imgs/study.webp);
+    background-image: url(./imgs/bg1.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -38,7 +39,6 @@ nav {
     z-index: 200;
 }
 
-
 .logo-link {
     display: flex;
     flex-direction: row;
@@ -53,7 +53,6 @@ nav {
 
 
 .name {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--sec-color);
 }
 
@@ -66,12 +65,6 @@ nav {
 .second {
     display: none;
 }
-
-
-.search-icon {
-    display: none;
-}
-
 
 
 .nav-links {
@@ -87,13 +80,19 @@ nav {
 }
 
 
-.nav-links ul li img {
-    display: none;
+.nav-links ul li a {
+    color: #000;
 }
 
 
-.nav-links ul li a {
-    color: #000;
+.nav-links ul li a i {
+    display: none;
+    margin-right: 3rem;
+}
+
+
+#menuIcon, .nav-links div i {
+    display: none;
 }
 
 
@@ -155,15 +154,12 @@ nav {
 }
 
 
-nav .fa {
-    display: none;
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-}
-
-
 @media (max-width: 700px) {
+    #menuIcon, .nav-links div i {
+        display: block;
+        margin-right: 2rem;
+        color: var(--sec-color);
+    }
     .second {
         display: block;
     }
@@ -193,11 +189,8 @@ nav .fa {
         border: 2px solid #000;
         margin-top: -9px;
     }
-    .nav-links ul li img {
+    .nav-links ul li i {
         display: block;
-        width: 20px;
-        height: 20px;
-        margin-left: 3rem;
     }
     .nav-links ul li h5 {
         margin-left: 1rem;
@@ -213,17 +206,13 @@ nav .fa {
         text-align: center;
         z-index: 200;
     }
-    nav .fa {
+    .nav-links ul li a i {
         display: block;
-        float: right;
         cursor: pointer;
-    }
+        margin-left: 3rem;
+    }    
     .nav-links ul li:hover::after, .nav-links ul li:hover::before {
         width: 0%;
-    }
-    .fa-times {
-        width: 40px;
-        height: 40px;
     }
 }
 
